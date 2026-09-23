@@ -20,7 +20,7 @@ const AppDetailsPage = async ({ params }: TAppDetailsPage) => {
     <div className="mb-[60px]">
       <main className="min-h-screen bg-[#F8F7FC]">
         {" "}
-        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mx-auto container px-4 py-10 sm:px-6 lg:px-8">
           {" "}
           {/* Back Button */}{" "}
           <Link
