@@ -1,12 +1,9 @@
 import { TApp } from '@/types/apps.type';
 import React from 'react';
 import AppCard from '../shared/AppCard';
+import { getAllApps } from '@/lib/apps';
 
-const getAllApps=async()=>{
-const res=await fetch('https://hero-app-tan.vercel.app/data.json')
-const data=await res.json()
-return data
-}
+
 
 const TrendingApps = async() => {
   const data=await getAllApps()
