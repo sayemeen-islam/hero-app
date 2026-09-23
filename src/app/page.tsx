@@ -12,6 +12,7 @@ export default function Home() {
   <Suspense fallback={<TrendingSkeleton />}>
   <TrendingApps />
 </Suspense>
+
 </div>
 
   );

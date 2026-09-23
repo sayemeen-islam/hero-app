@@ -1,3 +1,4 @@
+import InstallAppButton from "@/components/apps/InstallAppButton";
 import { getAllApps } from "@/lib/apps";
 import { TApp, TRating } from "@/types/apps.type";
 import Image from "next/image";
@@ -91,13 +92,7 @@ const AppDetailsPage = async ({ params }: TAppDetailsPage) => {
                 {/* Action */}{" "}
                 <div className="mt-6">
                   {" "}
-                  <Link
-                    href={`/apps/${app.id}/download`}
-                    className="inline-block rounded-xl bg-[#632EE3] px-8 py-3 font-semibold text-white transition-all duration-300 hover:bg-[#9F62F2] hover:shadow-lg"
-                  >
-                    {" "}
-                    Install App{" "}
-                  </Link>{" "}
+<InstallAppButton app={app}></InstallAppButton>
                 </div>{" "}
               </div>{" "}
             </div>{" "}
@@ -189,7 +184,7 @@ const AppDetailsPage = async ({ params }: TAppDetailsPage) => {
                     const percentage = (rating.count / totalRatings) * 100;
                     return (
                       <div
-                        key={app.ratings.name}
+                        key={rating.name}
                         className="flex items-center gap-3"
                       >
                         {" "}
@@ -216,6 +211,9 @@ const AppDetailsPage = async ({ params }: TAppDetailsPage) => {
           </section>{" "}
         </div>{" "}
       </main>
+
+
+
     </div>
   );
 };
