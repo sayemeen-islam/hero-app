@@ -34,7 +34,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link href='' className="btn rounded-lg text-white bg-[#9F62F2] hover:bg-9752f7 ">Contribute</Link>
+    <Link href='' className="btn rounded-lg text-white bg-[#9F62F2] hover:bg-[#9752f7] ">Contribute</Link>
   </div>
 </div>
 </div>
